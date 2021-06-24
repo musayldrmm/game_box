@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Stylish&family=Yeon+Sung&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins&family=Stylish&family=Yeon+Sung&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+sans);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: auto;
+  height: auto;
+  background: url("../background/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.container {
+  padding-top: 50px;
+  width: 100%;
+
+}
+
+.row {
+  width: 100vv;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  padding-top: 80px;
+  height: auto;
+
+
+
+}
+
+
+
+/*******************  oyun Kartları baslangici **********************/
+
+
+
+
+.card {
+
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 175px !important;
+  transition: 0.75s ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  display: flex;
+  border-radius: 5% !important;
+  float: left;
+  margin-right: 80px;
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+
+
+}
+
+.card:first-child,
+.card:nth-child(5) {
+  margin-left: 50px;
+}
+
+.card:hover {
+  transform: rotateY(0.5turn);
+}
+
+.card__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 0.75s ease-in-out;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  display: flex;
+  flex-direction: row;
+
+
+
+
+}
+
+.card img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.card__face--back {
+  transform: rotateY(0.5turn);
+
+}
+
+.play-name {
+  color: #fff;
+  margin-top: -250px;
+}
+
+.play {
+  font-family:'Courier New', Courier, monospace;  
+  align-items: center;
+  text-align: center;
+}
+
+.play p {
+   font-weight: 300;
+   font-size: 1.3em;
+   font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+.play-bttn {
+  position: relative;
+  margin-top: 162px;
+}
+
+.play button {
+  color: #000000;
+  width: 80%;
+  letter-spacing: 2px;
+  font-size: 15px;
+
+}
+.btn {
+  
+  background: rgb(230, 230, 230);
+  opacity: 0.8;
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow:hidden;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+
+
+@media (max-width: 1170px) {
+
+  .card {
+
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin-bottom: 175px !important;
+    cursor: pointer;
+    transition: 0.75s ease-in-out;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+
+  }
+
+  .card:first-child,
+  .card:nth-child(5) {
+    margin-left: 0px;
+  }
+
+  .scene {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    perspective: 800px;
+    flex-direction: column;
+
+
+  }
+
+  .card img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__face {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 0.75s ease-in-out;
+    -webkit-box-reflect: unset;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .card__face--back {
+    transform: none;
+  }
+
+  .play-name {
+    margin-top: -400px;
+  }
+
+  .play-bttn {
+    margin-top: 320px;
+  }
+}
+
+/*******************  oyun Kartları bitimi **********************/

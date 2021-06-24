@@ -1,0 +1,51 @@
+{{template "icp/head" }}
+
+<link rel="stylesheet" href="../assets/css/developers.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" ,
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/ec8283b947.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <!-- NavBar -->
+  {{template "icp/navbar" .}}
+    <!-- NavBar End-->
+
+  <!-- Body -->
+  <section>
+    <div class="container ">
+     <div class="row">
+       {{range $index,$deger:=.Developer}}
+          <figure class="snip1515">
+            <div class="profile-image"><img src="{{.Imgsrc}}"
+                alt="sample47" /></div>
+            <figcaption>
+              <h3>{{.Account.Fullname}}</h3>
+              <h4>{{.Duty}}</h4>
+              <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+              <div class="icons"><a href="{{.Inssrc}}"><i class="fab fa-instagram"></i></a>
+                <a href="{{.Linkın}}"> <i class="fab fa-linkedin"></i></a>
+                <a href="{{.Gitsrc}}"> <i class="fab fa-github"></i></a>
+              </div>
+            </figcaption>
+          </figure>
+        {{end}}
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Body End-->
+  <!-- footer  -->
+  <div class="copyright ">
+    <p> &copy; Copyright Game-Box </p>
+  </div>
+  <!-- footer End -->
+</body>
+
+</html>

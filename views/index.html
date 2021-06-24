@@ -1,0 +1,113 @@
+﻿{{template "icp/head" }}
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" ,
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  </head>
+<title>GameBox : Oyuncunun Adresi</title>
+<body>
+
+  {{template "icp/navbar" .}}
+  <!-- NavBar -->
+
+
+  <!-- NavBar End-->
+
+  <!-- Body -->
+  <section>
+   
+    <div class="container">
+      <div class="row">
+        <div class="card ">
+          <div class="card__face card__face--front">
+            <img src="../img/index/snakeStart.png" />
+          </div>
+          <div class="card__face card__face--back ">
+            <div><img src="../img/index/realsnake.jpg" />
+              <div class="play play-name">
+                <p>SNAKE</p>
+              </div>
+              <div class="play play-bttn"><a href="/game/snake"><button type="button" class="btn  ">OYNA</button></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card__face card__face--front">
+            <img src="../img/index/2048.png" />
+          </div>
+          <div class="card__face card__face--back ">
+            <div><img src="../img/index/2048-2.PNG" />
+              <div class="play play-name">
+                <p>2048</p>
+              </div>
+              <div class="play play-bttn"><a href="game/sayi-toplama"><button type="button" class="btn  ">OYNA</button></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card__face card__face--front">
+            <img src="../img/index/dino.png" />
+          </div>
+          <div class="card__face card__face--back ">
+            <div><img src="../img/index/dino3.png" />
+              <div class="play play-name">
+                <p style="color:black">DİNO DİNO DİNO </p>
+              </div>
+              <div class="play play-bttn"><a href="game/dino"><button type="button" class="btn" >OYNA</button></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-100"></div>
+        <div class="card ">
+          <div class="card__face card__face--front">
+            <img src="../img/index/blackjack.jpg" />
+          </div>
+          <div class="card__face card__face--back ">
+            <div><img src="../img/index/blackjack2.jpg" />
+              <div class="play play-name">
+                <p>BlackJack</p>
+              </div>
+              <div class="play play-bttn"><a href="game/black-jack"><button type="button" class="btn">OYNA</button></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card__face card__face--front">
+            <img src="../img/index/mario.PNG" />
+          </div>
+          <div class="card__face card__face--back ">
+            <div><img src="../img/index/mario2.jpg" />
+              <div class="play play-name">
+                <p>Mario</p>
+              </div>
+              <div class="play play-bttn"><a href="game/mario"><button type="button" class="btn">OYNA</button></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card__face card__face--front">
+            <img src="../img/index/index6.jpg" />
+          </div>
+          <div class="card__face card__face--back ">
+            <div><img src="../img/index/index7.jpg" />
+              <div class="play play-name">
+                <p>DİNO DİNO DİNO</p>
+              </div>
+              <div class="play play-bttn"><a><button type="button" class="btn">OYNA</button></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Body End-->
+  <!-- footer  -->
+  {{template "icp/footer" .}}
+  <!-- footer End -->
+
+</body>
+
+</html>
